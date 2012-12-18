@@ -1,0 +1,504 @@
+@font-face {
+	font-family: 'Futura Book';
+	src: url('fonts/futura_book.eot');
+	src: url('fonts/futura_book.eot?#iefix') format('embedded-opentype'),
+	url('fonts/futura_book.woff') format('woff'),
+	url('fonts/futura_book.ttf') format('truetype'),
+	url('fonts/futura_book.svg#futura_book') format('svg');
+	font-weight: normal;
+	font-style: normal; }
+
+@font-face {
+	font-family: 'Futura Ext Bold';
+	src: url('fonts/futura_extra_bold.eot');
+	src: url('fonts/futura_extra_bold.eot?#iefix') format('embedded-opentype'),
+	url('fonts/futura_extra_bold.woff') format('woff'),
+	url('fonts/futura_extra_bold.ttf') format('truetype'),
+	url('fonts/futura_extra_bold.svg#Futura_ExtraBold') format('svg');
+	font-weight: normal;
+	font-style: normal; }
+
+/**********************************************NEW*****************************************************/
+#main {
+	height: 450px;
+	max-height: 500px; }
+
+.hide {
+	display: none;
+	visibility: hidden; }
+
+.show {
+	/*display: block;*/
+	visibility: visible; }
+
+#reloj {
+	height: 117%;
+	width: 80%; }
+
+.timeline_top ul { display: none; }
+
+#calendario, #wrap {
+	left: 20px;
+	position: absolute;
+	top: 90px;
+	width: 100%;
+	z-index: 500; }
+
+.timeline_bottom ul {
+	left: 0;
+	width: 100%; }
+
+#underCont {
+	font-family: 'Futura Book';
+	position: absolute;
+	top: 0;
+	font-size: 14px;
+	left: 0;
+	width: 175px;
+	height: 115px;
+	display: none;
+	background: url("../img/fondo_info_dia.png") no-repeat;
+	color: #FFFFFF;
+	z-index: 301;
+	text-align: center; }
+
+	#underCont .count_tw { margin-top: 20px; }
+
+#btn_click_dia {
+	background: url('../img/click_dia.png');
+	display: block;
+	height: 23px;
+	width: 155px;
+	margin: 0 auto; }
+
+/*****************************************OLD******************************************************/
+#content2 {
+	max-height: 530px;
+	min-height: 520px;
+	width: 100%;
+	position: relative; }
+
+.buttons {
+	height: 150px;
+	position: absolute;
+	top: 290px;
+	width: 99.1%;
+	z-index: 1; }
+
+	.buttons .prev {
+		background: url(http://hidra.advante.cl/pepsicolombia/v2/PepsiCo/co.pepsimundo.com/promocion/pepsi-tic-toc/img/btn_izq.png) no-repeat scroll 0 0 transparent;
+		display: block;
+		float: left;
+		height: 131px;
+		width: 46px; }
+
+		.buttons .prev:hover { cursor: pointer; }
+
+	.buttons .next {
+		background: url(http://hidra.advante.cl/pepsicolombia/v2/PepsiCo/co.pepsimundo.com/promocion/pepsi-tic-toc/img/btn_der.png) no-repeat scroll 0 0 transparent;
+		height: 131px;
+		width: 46px;
+		float: right; }
+
+		.buttons .next:hover { cursor: pointer; }
+
+.play {
+	position: absolute;
+	right: 50%;
+	top: 450px; }
+
+.galeria {
+	left: 280px;
+	position: absolute;
+	top: 140px; }
+
+.btn_ir_aplicacion {
+	position: absolute;
+	right: 500px;
+	top: 460px; }
+
+.btn_diasAnteriores {
+	position: absolute;
+	top: 8.5em; }
+
+	.btn_diasAnteriores:hover { cursor: pointer; }
+
+.calendar_mask {
+	background: #000 url(../i/bg-area-infodate.png) 25px 0px no-repeat;
+	height: 117%;
+	left: 0;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 300; }
+
+#fecha_actual {
+	font-family: Futura Book;
+	font-size: 1.6em;
+	position: absolute;
+	z-index: 800;
+	width: 280px; }
+
+.footer_interno {
+	position: absolute;
+	top: 49.6em;
+	width: 100%; }
+
+.point {
+	border: 8px solid #E63E43;
+	height: 10px;
+	left: 50%;
+	margin: 0 -12px;
+	position: absolute;
+	top: 20.3em;
+	width: 10px;
+	z-index: 110;
+	border-radius: 50% 50% 50% 50%;
+	-moz-border-radius: 50% 50% 50% 50%;
+	-webkit-border-radius: 50% 50% 50% 50%; }
+
+/****************************************************************/
+/************************** RELOJ *******************************/
+/****************************************************************/
+#fondo-reloj-01 {
+	position: relative;
+	width: 482px;
+	height: 481px;
+	margin: 20px auto 0 auto;
+	background: url('../img/reloj_bg.png') no-repeat; }
+
+#fondo-reloj-02 {
+	position: absolute;
+	width: 383px;
+	height: 382px;
+	background: url('../img/reloj_detalle_bg.png') no-repeat;
+	left: 50px;
+	top: 50px;
+	z-index: 2; }
+
+#fondo-reloj-03 {
+	position: absolute;
+	width: 403px;
+	height: 399px;
+	background: url('../img/agujas.png') no-repeat;
+	left: 40px;
+	top: 43px;
+	z-index: 3; }
+
+#fondo-reloj-04 {
+	background: url(../i/bg-reloj-red.png) center no-repeat;
+	border-radius: 50%;
+	position: absolute;
+	width: 340px;
+	height: 340px;
+	left: 72px;
+	top: 72px;
+	z-index: 4; }
+
+#fondo-reloj-05 {
+	position: absolute;
+	width: 318px;
+	height: 318px;
+	left: 83px;
+	top: 83px;
+	overflow: hidden;
+	z-index: 5;
+	-webkit-border-radius: 50% 50% 50% 50%;
+	-moz-border-radius: 50% 50% 50% 50%;
+	border-radius: 50% 50% 50% 50%; }
+
+	#fondo-reloj-05 img {
+		border-radius: 50%;
+		height: 318px;
+		width: 318px; }
+
+#mfeed {
+	display: none;
+	position: absolute;
+	width: 270px;
+	height: 205px;
+	font-family: 'Futura Ext Bold';
+	font-size: 13pt;
+	left: 109px;
+	top: 141px;
+	z-index: 70; }
+
+#entrada {
+	margin-left: 15px;
+	margin-top: 80px;
+	padding: 0;
+	text-align: left;
+	text-transform: uppercase;
+	font-family: 'Conv_fuente', Arial, sans-serif;
+	color: #fff; }
+
+	#entrada .clusterContentBlock {
+		text-align: center;
+		text-transform: none; }
+
+	#entrada div {
+		/*width: auto;*/
+		color: #FFF;
+		font-size: 10px;
+		width: 150px; }
+
+#clusterexpand {
+	padding: 0;
+	margin-left: 15px;
+	text-align: left;
+	text-transform: uppercase;
+	font-family: 'Conv_fuente', Arial, sans-serif; }
+
+#mfeed .publishedDate {
+	font-family: 'Futura Book';
+	font-size: 12px; }
+
+#mfeed a { color: #85D7FF; }
+
+#mfeed .social {
+	display: inline-block;
+	float: left;
+	margin: 5px 5px 0;
+	text-align: center;
+	width: 240px; }
+
+#mfeed .FB {
+	background: url('../img/share_face.png') no-repeat scroll 0 0 transparent;
+	display: inline-block;
+	height: 19px;
+	width: 105px;
+	cursor: pointer; }
+
+#mfeed .TW {
+	background: url('../img/share_tw.png') no-repeat scroll 0 0 transparent;
+	display: inline-block;
+	height: 19px;
+	width: 94px;
+	cursor: pointer; }
+
+#clock {
+	position: relative;
+	width: 482px; /* width: 600px;
+        	height: 600px; */
+	height: 481px;
+	margin: 0;
+	list-style: none; /* margin: 20px auto 0 auto;
+        	background: url(images/clockface.jpg); */ }
+
+.reloj-hora {
+	color: #ffffff;
+	position: absolute;
+	font-size: 2em;
+	font-family: 'Conv_fuente', Arial, sans-serif; }
+
+.reloj-hora2 {
+	color: #ff0000;
+	position: absolute;
+	font-size: 2em;
+	font-family: 'Conv_fuente', Arial, sans-serif; }
+
+.reloj-hora:hover { color: #fff; }
+
+#num12 {
+	top: -12px;
+	left: 227px; }
+
+#num3 {
+	top: 225px;
+	right: 0px; }
+
+#num6 {
+	bottom: -5px;
+	left: 235px; }
+
+#num9 {
+	top: 225px;
+	left: 0px; }
+
+#switch1, #switch2, #switch3 {
+	background-image: url(../i/sprite-reloj.png);
+	background-repeat: no-repeat; }
+
+#switch1 {
+	position: absolute;
+	background: url('../img/switch_AM.png') no-repeat;
+	width: 42px;
+	height: 42px;
+	top: 46px;
+	left: 54px;
+	z-index: 50; }
+
+#switch2 {
+	position: absolute;
+	background-position: -71px 0;
+	width: 39px;
+	height: 39px;
+	bottom: 46px;
+	left: 54px;
+	z-index: 50; }
+
+	#switch2:hover { background-position: -71px -60px; }
+
+#switch3 {
+	position: absolute;
+	background-position: 0 0;
+	width: 41px;
+	height: 40px;
+	bottom: 46px;
+	right: 54px;
+	z-index: 50; }
+
+	#switch3:hover { background-position: 0 -58px; }
+
+#switch1:hover, #switch2:hover, #switch3:hover { cursor: pointer; }
+
+.xxpm { display: none; }
+
+#sec, #min, #hour, .pto, #sec2, #min2, #hour2 {
+	position: absolute;
+	width: 30px;
+	height: 481px;
+	top: 0;
+	left: 226px; /* left: 285px; */ }
+
+#sec2, #min2, #hour2 { display: none; }
+
+#sec, #sec2 {
+	background: url('../img/segundero2.png');
+	z-index: 20; }
+
+#min, #min2 {
+	background: url('../img/manilla7.png');
+	z-index: 30; }
+
+#hour, #hour2 {
+	background: url('../img/manilla_hora.png');
+	z-index: 10; }
+
+.pto { z-index: 40; width: 10px;}
+
+.ptr {
+	margin: 36px 1px 0 1px;
+	background: url('../i/sprite-cluster.png') no-repeat -81px -5px;
+	width: 8px;
+	height: 8px;
+	cursor: pointer; }
+
+	.ptr:hover{
+		background: url('../i/sprite-cluster.png') no-repeat -81px -22px;
+		width: 8px;
+		height: 9px;
+	}
+
+.pta {
+	margin: 36px 1px 0 1px;
+	background: url('../i/sprite-cluster.png') no-repeat -63px -5px;
+	width: 9px;
+	height: 8px;
+	cursor: pointer; }
+
+	.pta:hover{
+		background: url('../i/sprite-cluster.png') no-repeat -63px -22px;
+		width: 9px;
+		height: 9px;
+	}
+
+.area-reloj p {
+	text-align: center;
+	padding: 10px 0 0 0; }
+
+#clusterexpand {
+	padding: 0;
+	margin-left: 15px;
+	text-align: left;
+	text-transform: uppercase;
+	font-family: 'Conv_fuente', Arial, sans-serif; }
+
+.cluster {
+	margin: 26px auto 0px auto;
+	background: url('../i/sprite-cluster.png') no-repeat 0 0;
+	width: 22px;
+	height: 19px;
+	cursor: pointer; }
+
+	.cluster:hover{
+		background: url('../i/sprite-cluster.png') no-repeat 0 -28px;
+		width: 22px;
+		height: 19px;
+	}
+
+.clusters {
+	width: 50px;
+	height: 24px;
+	background-color: #000;
+	opacity: 0.5; }
+
+.clstrCont {
+	height: 24px;
+	background-color: #000;
+	opacity: 0.8;
+	padding-left: 10px;
+	border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px; }
+
+.clusterContentBlock {
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	color: #FFF;
+	font-family: "Futura Book";
+	padding: 20px 15px 10px;
+	font-size: 10px;
+	margin-top: 5px;
+	width: 151px;
+	height: 69px; }
+
+.clusterContentBlockRed { background: url('../i/sprite-globos.png') no-repeat 0 -1px; }
+
+.clusterContentBlockBlue { background: url('../i/sprite-globos.png') no-repeat -230px -1px; }
+
+@font-face {
+	font-family: 'Conv_fuente';
+	src: url('fonts/fuente.eot');
+	src: url('fonts/fuente.woff') format('woff'), url('fonts/fuente.ttf') format('truetype'), url('fonts/fuente.svg') format('svg');
+	font-weight: normal;
+	font-style: normal; }
+
+/*--- FIN ICON MANECILLA RELOJ--*/
+
+.simbologia {
+	background-color: #000;
+	background-color: rgba(0,0,0,.4);
+	border-radius: 20px 20px 20px 20px;
+	height: 120px;
+	position: absolute;
+	right: 2%;
+	top: 2%;
+	width: 240px;
+	z-index: 2; }
+
+.image-simb01 {
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 120px;
+	list-style: none;
+	margin-bottom: 40px;
+	margin-top: 10px;
+	position: absolute;
+	right: 8%;
+	width: 200px;
+	z-index: 3; }
+
+	.image-simb01 li {
+		color: #ffffff;
+		padding-top: 4px;
+		text-align: left; }
+
+		.image-simb01 li img {
+			border: medium none;
+			float: left;
+			padding-bottom: 10px;
+			padding-right: 5px;
+			vertical-align: middle; }

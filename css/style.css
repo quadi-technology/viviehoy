@@ -1,0 +1,381 @@
+/*
+Autor: Adrian Quevedo (http://elnucleo.co)
+*/
+
+/* =1 GLOBAL
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.container {
+  background: #002338;
+  color: #fff;
+  font: normal 62.5% Arial, Helvetica, sans-serif;
+  height: 700px;
+  line-height: 1;
+  margin: 0 auto;
+  overflow: hidden;
+  vertical-align: top;
+  width: 100%; }
+
+/* =2 LINKS
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+a:link, a:visited { color: #fff; }
+
+a:hover { color: #fff; }
+
+a:active { color: #fff; }
+
+/* =5 CONTENT
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.slider {
+  height: 565px;
+  position: relative;
+  width: 100%; }
+
+.reel {
+  height: 565px;
+  overflow: hidden;
+  width: 3840px; }
+
+.section {
+  float: left;
+  height: 565px;
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+
+.start, .clock {
+  background: url(../i/bg-slider.jpg) left 0 no-repeat;
+  background-size: cover; }
+
+.manifest { background: url(../i/bg-manifest.jpg) center no-repeat; }
+
+.controls { display: none; }
+
+  .controls a {
+    background-image: url(../i/sprite-controls.jpg);
+    background-repeat: no-repeat;
+    display: block;
+    height: 128px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: 100%;
+    top: 40%;
+    white-space: nowrap;
+    width: 40px;
+    z-index: 200; }
+
+.btn-back {
+  background-position: left 0;
+  left: 0; }
+
+  .btn-back:hover { background-position: left bottom; }
+
+.btn-next {
+  background-position: right 0;
+  right: 0; }
+
+  .btn-next:hover { background-position: right bottom; }
+
+/*Slide One*/
+.texto-inicio {
+  height: 160px;
+  left: 50%;
+  margin-left: -544px;
+  overflow: hidden;
+  padding-top: 12px;
+  position: absolute;
+  top: 185px;
+  width: 1088px;
+  z-index: 2; }
+
+.intro-txt {
+  background-image: url('../i/sprite-vivehoy.png');
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-indent: 100%;
+  top: 170px;
+  white-space: nowrap; }
+
+.txt01 {
+  background-position: -6px -11px;
+  background-repeat: no-repeat;
+  height: 146px;
+  width: 134px; }
+
+.txt02 {
+  background-position: -179px -20px;
+  background-repeat: no-repeat;
+  height: 137px;
+  margin-right: 82px;
+  width: 444px; }
+
+.txt-comp {
+  float: left;
+  position: relative; }
+
+.txt03 {
+  background-position: -660px -20px;
+  background-repeat: no-repeat;
+  height: 137px;
+  width: 423px; }
+
+.logo {
+  background-position: -1120px -3px;
+  background-repeat: no-repeat;
+  height: 161px;
+  left: 135px;
+  position: absolute;
+  top: -180px;
+  width: 161px; }
+
+/*Slide Two*/
+.area-reloj { opacity: 0; }
+
+.area-convenciones {
+  position: absolute;
+  right: 2%;
+  top: -500px; }
+
+.area-infodate {
+  background: url(../i/bg-area-infodate.png) center 0 no-repeat;
+  left: -1260px;
+  padding-top: 60px;
+  position: absolute;
+  width: 280px; }
+
+/*Slide Three*/
+.area-video, .area-video iframe {
+  height: 100%;
+  width: 100%; }
+
+.area-back p {
+  overflow: hidden;
+  position: relative;
+  text-indent: 100%;
+  white-space: nowrap; }
+
+.manifest-title, .manifest-subtitle {
+  margin: 0 auto;
+  overflow: hidden; }
+
+.manifest-title {
+  height: 173px;
+  margin-top: 70px;
+  width: 856px; }
+
+  .manifest-title p {
+    background: url(../i/bg-manifest-title.png) center no-repeat;
+    height: 173px;
+    top: 180px;
+    width: 856px; }
+
+.manifest-subtitle {
+  height: 70px;
+  margin-top: 10px;
+  width: 341px; }
+
+  .manifest-subtitle p {
+    background: url(../i/bg-manifest-subtitle.png) center no-repeat;
+    height: 70px;
+    top: -80px;
+    width: 341px; }
+
+.btnPlay {
+  background: url(../i/sprite-btn-play.png) 0 0 no-repeat;
+  display: block;
+  height: 80px;
+  margin: 40px auto;
+  opacity: 0;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 80px; }
+
+  .btnPlay:hover { background-position: 0 bottom; }
+
+/*Menu*/
+.menu {
+  background: url(../i/bg-menu.jpg) 0 0 repeat-x;
+  height: 72px;
+  text-align: center; }
+
+  .menu a {
+    background-image: url(../i/sprite-menu.jpg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 72px;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap; }
+
+.btnManifiesto {
+  background-position: 0 0;
+  width: 324px; }
+
+  .btnManifiesto:hover { background-position: 0 bottom; }
+
+.btnCreaProposito {
+  background-position: -324px 0;
+  width: 315px; }
+
+  .btnCreaProposito:hover { background-position: -324px bottom; }
+
+.btnRedime {
+  background-position: -639px 0;
+  width: 315px; }
+
+  .btnRedime:hover { background-position: -639px bottom; }
+
+/* =6 FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.social {
+  float: right;
+  text-align: right;
+  width: 50%; }
+
+  .social a, .social span {
+    background-image: url(../i/sprite-footer.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap; }
+
+.logoPepsico {
+  background-position: 0 0;
+  height: 22px;
+  width: 88px; }
+
+.btnTwitter {
+  background-position: -101px 0;
+  height: 24px;
+  width: 24px; }
+
+.btnFacebook {
+  background-position: -133px 0;
+  height: 24px;
+  width: 23px; }
+
+.legal{
+  float: left;
+  width: 50%; }
+
+  .legal a{
+    display: inline-block;
+    font: normal 16px 'Futura Book';
+    padding: 10px 20px; }
+
+/*Modal*/
+.modal {
+  background: url(../i/bg-modal.png) 0 0 repeat;
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999; }
+
+.window {
+  color: #fff;
+  display: none;
+  height: 450px;
+  margin: 0 auto;
+  position: relative;
+  top: 140px;
+  width: 700px; }
+
+  .window .title {
+    font: normal 26px 'Conv_fuente', Arial, sans-serif;
+    padding: 10px 0;
+    text-transform: uppercase; }
+
+.btn-close-terms {
+  background-image: url(../i/sprite-btn-cerrar.jpg);
+  background-position: 0 0;
+  height: 50px;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  text-indent: 100%;
+  top: 0;
+  white-space: nowrap;
+  width: 50px; }
+
+  .btn-close-terms:hover { background-position: right 0; }
+
+/*Ventana terminos*/
+
+.area-terms {
+  background-color: #fff;
+  height: 360px;
+  padding: 20px 40px; }
+
+.info-terms {
+  color: #4D4D4D;
+  font-size: 12px;
+  height: 360px;
+  overflow: auto;
+  padding-right: 30px; }
+
+/*Ventana Acerca*/
+
+.acerca .title{
+  color: #00B3FF;
+}
+
+.area-acerca{
+  background: #266b94 url(../i/bg-acerca.jpg) 0 0 repeat-x;
+  height: 360px;
+  padding: 20px 40px;
+}
+
+.info-acerca {
+  font-family: 'Futura Book', Arial, sans-serif;
+  color: #fff;
+  font-size: 12px;
+  height: 360px;
+  overflow: auto; }
+
+.title-acerca{
+  background: url(../i/title-acerca.png) 0 0 no-repeat;
+  height: 35px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 476px;
+}
+
+.question{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.acerca-txt{
+  font-size: 21px;
+  text-transform: uppercase;
+}
+
+.sub-info{
+  font-size: 13px;
+  display: inline-block;
+  height: 80px;
+  padding-left: 80px;
+  width: 200px;
+}
+
+.sub-info span{
+  display: block;
+  color: #2AA9E0;
+  text-transform: uppercase;
+}
+
+.tweet{
+  background: url(../i/bg-subinfo-tweet.png) 0 0 no-repeat;
+  margin-right: 30px;
+}
+
+.pepsi{
+  background: url(../i/bg-subinfo-pepsi.png) 0 0 no-repeat;
+}
