@@ -11,3 +11,4 @@ require_once 'idiorm.php';
 ORM::configure(Config::$db->dns);
 ORM::configure('username', Config::$db->username);
 ORM::configure('password', Config::$db->password);
+ORM::configure('driver_options', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
