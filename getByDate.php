@@ -2,7 +2,6 @@
 
 require_once 'php/shared.php';
 
-
 $date = isset($_GET['fecha']) ? $_GET['fecha'] : date('d/m/Y');
 $date = explode('/', $date);
 $date = array_reverse($date);
@@ -21,4 +20,8 @@ foreach ($entries as $entry) {
   $entry['hora'] = date('H:i', strtotime($entry['posted_at']));
   $return['contenido'][$entry['hora']][] = $entry;
 }
+
+header('Content-type: application/json');
+$callback = isset($_GET['callback']) ? filter_var($_GET['callback'],  FILTER_SANITIZE_STRING) : 'jsonp';
+print $callback . '(' . json_encode($return) . ');';
 
