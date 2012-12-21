@@ -17,7 +17,7 @@ foreach ($entries as $entry) {
   if ($posted_at > $from) {
     $data = array(
       'id' => $entry->id,
-      'posted_at' => $entry->posted_at,
+      'posted_at' => date('Y-m-d H:m:i', strtotime($entry->posted_at)),
       'source' => $entry->source->name,
       'type' => $entry->type,
       'userid' => $entry->source->userid,
