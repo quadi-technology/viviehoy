@@ -2,7 +2,7 @@
 date_default_timezone_set("America/Bogota");
 
 //$url = "http://190.3.169.20/pepsicolombia";
-$url = "https://api.storify.com/v1/stories/vivehoy/pepsi-vivehoy";
+$url = "https://api.storify.com/v1/stories/vivehoy/pepsi-vivehoy/?page=1&per_page=50";
 $data = file_get_contents($url);
 $datos = json_decode($data);
 
