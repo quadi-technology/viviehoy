@@ -7,6 +7,7 @@ class Storify {
   public static function getEntries() {
     $story = Config::$story;
     $url = "https://api.storify.com/v1/stories/vivehoy/{$story}";
+    $url .= "/?page=10&per_page=50";
 
     $ch2 = curl_init();
     curl_setopt($ch2, CURLOPT_URL, $url);
