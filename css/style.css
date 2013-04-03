@@ -206,25 +206,28 @@ a:active { color: #fff; }
     height: 72px;
     overflow: hidden;
     text-indent: 100%;
-    white-space: nowrap; }
+    white-space: nowrap;
+    width: 325px; }
 
-.btnManifiesto {
-  background-position: 0 0;
-  width: 324px; }
+.btnManifiesto { background-position: 0 0;}
 
   .btnManifiesto:hover { background-position: 0 bottom; }
 
 .btnCreaProposito {
-  background-position: -324px 0;
-  width: 315px; }
+  background-position: -326px 0;
+  display: none !important; }
 
-  .btnCreaProposito:hover { background-position: -324px bottom; }
+  .btnCreaProposito:hover { background-position: -326px bottom; }
 
 .btnRedime {
-  background-position: -639px 0;
-  width: 315px; }
+  background-position: -651px 0; }
 
-  .btnRedime:hover { background-position: -639px bottom; }
+  .btnRedime:hover { background-position: -651px bottom; }
+
+.btnInstagram {
+  background-position: -976px 0; }
+
+  .btnInstagram:hover { background-position: -976px bottom; }
 
 /* =6 FOOTER
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
